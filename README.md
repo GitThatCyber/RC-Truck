@@ -11,4 +11,26 @@ Project intent is to control basic RC Truck with advanced functionality. Disasse
 - Red LED (X2)
 - Photocell
 
-After adding all necessary components in desired location we can focus on programming. Ideally a functional PID loop would control the steering of the vehicle although this may be impossible due to the factory provided motor which is discrete. All features have been tested and successful. Any advice or changes welcome.
+After adding all necessary components in desired location we can focus on programming. Ideally a functional PID loop would control the steering of the vehicle although this may be impossible due to the factory provided motor which is discrete. All features have been tested and successful. Below is pseudo. Functions developed to handle all commands enhancing the readability and functionality.  
+
+- Define IO and Addressing
+- Setup 
+  - Define serial
+  - Define pins
+- Main Loop
+  - start motion
+    if distance > setpoint
+      turn wheels straight
+      brake lights off
+      forward motion
+    if distance < setpoint
+      brake lights on
+      stop
+      turn wheels right
+      reverse motion
+      clear object
+      turn wheels straight
+      
+      
+      
+     
