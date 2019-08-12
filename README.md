@@ -19,17 +19,17 @@ After adding all necessary components in desired location we can focus on progra
   - Define pins
 - Main Loop
   - start motion
-    if distance > setpoint
-      turn wheels straight
-      brake lights off
-      forward motion
-    if distance < setpoint
-      brake lights on
-      stop
-      turn wheels right
-      reverse motion
-      clear object
-      turn wheels straight
+  - if distance > setpoint
+      - turn wheels straight
+      - brake lights off
+      - forward motion
+  - if distance < setpoint
+      - brake lights on
+      - stop
+      - turn wheels right
+      - reverse motion
+      - clear object
+      - turn wheels straight
       
       
       
